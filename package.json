@@ -18,5 +18,8 @@
   "homepage": "https://github.com/chengwen-zheng/ts-learning-demo#readme",
   "devDependencies": {
     "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "typescript": "^4.5.4"
   }
 }
