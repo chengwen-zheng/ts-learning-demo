@@ -5,13 +5,21 @@ interface Todo {
     completed: boolean
 }
 
+type A = {
+   a: string
+} | {
+    title: string
+    description: string
+    completed: boolean
+};
+
 interface T1 {
     title: string;
 }
 
 type MyExclude<T, K> = T extends K ? never : T;
 type T0 = MyExclude<"a" | "b" | "c", "a">;
-type T2 = MyExclude<T1, Todo>;
+type T2 = MyExclude<A, Todo>;
 
 const a:T2 = {
     title:'3'
